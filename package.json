@@ -1,28 +1,30 @@
 {
-  "name": "pgats-2025-02-base",
+  "name": "pgats-final",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha --recursive --exit \"test/**/*.test.js\"",
+    "lint": "echo \"no lint configured\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juliodelimas/pgats-2025-02-base.git"
+  "engines": {
+    "node": ">=16"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/juliodelimas/pgats-2025-02-base/issues"
-  },
-  "homepage": "https://github.com/juliodelimas/pgats-2025-02-base#readme",
   "dependencies": {
-    "apollo-server-express": "^3.13.0",
-    "express": "^4.21.2",
-    "graphql": "^16.11.0",
-    "jsonwebtoken": "^9.0.2",
-    "swagger-ui-express": "^5.0.1"
+    "apollo-server-express": "^3.11.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "uuid": "^9.0.0",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "sinon": "^16.0.0",
+    "supertest": "^6.3.3"
   }
 }
