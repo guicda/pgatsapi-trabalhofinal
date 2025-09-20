@@ -1,4 +1,4 @@
-# PGATS Final — base
+# PGATS Final — how to run
 
 ## Como rodar localmente
 
